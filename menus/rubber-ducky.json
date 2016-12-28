@@ -16,10 +16,10 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "rubber-ducky",
+          "label": "Rubber Ducky",
           "submenu": [
             {
-              "label": "Encourage me",
+              "label": "Fetch an encouragement",
               "command": "rubber-ducky:encourage"
             },
             {
