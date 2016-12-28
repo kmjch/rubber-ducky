@@ -3,11 +3,11 @@
     "atom-text-editor": [
       {
         "label": "Fetch an encouragement",
-        "command": "rubberducky:encourage"
+        "command": "rubber-ducky:encourage"
       },
       {
         "label": "Hear from Rubber Ducky",
-        "command": "rubberducky:respond"
+        "command": "rubber-ducky:respond"
       }
     ]
   },
@@ -16,15 +16,15 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "rubberducky",
+          "label": "rubber-ducky",
           "submenu": [
             {
               "label": "Encourage me",
-              "command": "rubberducky:encourage"
+              "command": "rubber-ducky:encourage"
             },
             {
               "label": "Respond",
-              "command": "rubberducky:respond"
+              "command": "rubber-ducky:respond"
             }
           ]
         }

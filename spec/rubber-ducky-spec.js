@@ -1,6 +1,6 @@
 'use babel';
 
-import rubberducky from '../lib/rubberducky';
+import rubberducky from '../lib/rubber-ducky';
 
 // Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
 //
@@ -12,33 +12,33 @@ describe('RubberDucky', () => {
 
   beforeEach(() => {
     workspaceElement = atom.views.getView(atom.workspace);
-    activationPromise = atom.packages.activatePackage('rubberducky');
+    activationPromise = atom.packages.activatePackage('rubber-ducky');
   });
 
   describe('when the rubberducky:encourage event is triggered', () => {
     it('hides and shows the modal panel', () => {
       // Before the activation event the view is not on the DOM, and no panel
       // has been created
-      expect(workspaceElement.querySelector('.rubberducky')).not.toExist();
+      expect(workspaceElement.querySelector('.rubber-ducky')).not.toExist();
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'rubberducky:fetch');
+      atom.commands.dispatch(workspaceElement, 'rubber-ducky:encourage');
 
       waitsForPromise(() => {
         return activationPromise;
       });
 
       runs(() => {
-        expect(workspaceElement.querySelector('.rubberducky')).toExist();
+        expect(workspaceElement.querySelector('.rubber-ducky')).toExist();
 
-        let rubberDuckyElement = workspaceElement.querySelector('.rubberducky');
+        let rubberDuckyElement = workspaceElement.querySelector('.rubber-ducky');
         expect(rubberDuckyElement).toExist();
 
-        let rubberduckyPanel = atom.workspace.panelForItem(rubberDuckyElement);
-        expect(rubberduckyPanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'rubberducky:encourage');
-        expect(rubberduckyPanel.isVisible()).toBe(false);
+        let rubberDuckyPanel = atom.workspace.panelForItem(rubberDuckyElement);
+        expect(rubberDuckyPanel.isVisible()).toBe(true);
+        atom.commands.dispatch(workspaceElement, 'rubber-ducky:encourage');
+        expect(rubberDuckyPanel.isVisible()).toBe(false);
       });
     });
 
@@ -51,11 +51,11 @@ describe('RubberDucky', () => {
       // workspaceElement to the DOM are generally slower than those off DOM.
       jasmine.attachToDOM(workspaceElement);
 
-      expect(workspaceElement.querySelector('.rubberducky')).not.toExist();
+      expect(workspaceElement.querySelector('.rubber-ducky')).not.toExist();
 
       // This is an activation event, triggering it causes the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'rubberducky:fetch');
+      atom.commands.dispatch(workspaceElement, 'rubber-ducky:encourage');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -63,9 +63,9 @@ describe('RubberDucky', () => {
 
       runs(() => {
         // Now we can test for view visibility
-        let rubberDuckyElement = workspaceElement.querySelector('.rubberducky');
+        let rubberDuckyElement = workspaceElement.querySelector('.rubber-ducky');
         expect(rubberDuckyElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'rubberducky:fetch');
+        atom.commands.dispatch(workspaceElement, 'rubber-ducky:encourage');
         expect(rubberDuckyElement).not.toBeVisible();
       });
     });

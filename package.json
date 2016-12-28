@@ -1,13 +1,13 @@
 {
-  "name": "rubberducky",
-  "main": "./lib/rubberducky",
+  "name": "rubber-ducky",
+  "main": "./lib/rubber-ducky",
   "version": "1.0.0",
   "description": "A text version of an encouraging and affirming rubber ducky.",
   "keywords": [],
   "activationCommands": {
-    "atom-workspace": "rubberducky:encourage"
+    "atom-workspace": "rubber-ducky:encourage"
   },
-  "repository": "https://github.com/kmjch/RubberDucky",
+  "repository": "https://github.com/kmjch/rubber-ducky",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
