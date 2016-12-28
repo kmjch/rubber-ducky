@@ -2,8 +2,8 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle encourager",
-        "command": "encourager:toggle"
+        "label": "Fetch an encouragement",
+        "command": "encourager:fetch"
       }
     ]
   },
@@ -15,8 +15,8 @@
           "label": "encourager",
           "submenu": [
             {
-              "label": "Toggle",
-              "command": "encourager:toggle"
+              "label": "Fetch",
+              "command": "encourager:fetch"
             }
           ]
         }

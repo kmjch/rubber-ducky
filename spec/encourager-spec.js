@@ -15,7 +15,7 @@ describe('Encourager', () => {
     activationPromise = atom.packages.activatePackage('encourager');
   });
 
-  describe('when the encourager:toggle event is triggered', () => {
+  describe('when the encourager:fetch event is triggered', () => {
     it('hides and shows the modal panel', () => {
       // Before the activation event the view is not on the DOM, and no panel
       // has been created
@@ -23,7 +23,7 @@ describe('Encourager', () => {
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'encourager:toggle');
+      atom.commands.dispatch(workspaceElement, 'encourager:fetch');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -37,7 +37,7 @@ describe('Encourager', () => {
 
         let encouragerPanel = atom.workspace.panelForItem(encouragerElement);
         expect(encouragerPanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'encourager:toggle');
+        atom.commands.dispatch(workspaceElement, 'encourager:fetch');
         expect(encouragerPanel.isVisible()).toBe(false);
       });
     });
@@ -55,7 +55,7 @@ describe('Encourager', () => {
 
       // This is an activation event, triggering it causes the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'encourager:toggle');
+      atom.commands.dispatch(workspaceElement, 'encourager:fetch');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -65,7 +65,7 @@ describe('Encourager', () => {
         // Now we can test for view visibility
         let encouragerElement = workspaceElement.querySelector('.encourager');
         expect(encouragerElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'encourager:toggle');
+        atom.commands.dispatch(workspaceElement, 'encourager:fetch');
         expect(encouragerElement).not.toBeVisible();
       });
     });

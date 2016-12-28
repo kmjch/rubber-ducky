@@ -6,7 +6,7 @@
   "keywords": [
   ],
   "activationCommands": {
-    "atom-workspace": "encourager:toggle"
+    "atom-workspace": "encourager:fetch"
   },
   "repository": "https://github.com/atom/encourager",
   "license": "MIT",
