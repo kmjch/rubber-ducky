@@ -43,10 +43,6 @@ describe('RubberDucky', () => {
 
         atom.commands.dispatch(workspaceElement, 'rubber-ducky:respond');
         expect(rubberDuckyPanel.isVisible()).toBe(false);
-
-        atom.commands.dispatch(workspaceElement, 'rubber-ducky:draw');
-        expect(rubberDuckyPanel.isVisible()).toBe(false);
-
       });
     });
 

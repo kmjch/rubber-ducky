@@ -1,7 +1,6 @@
 {
   "atom-workspace": {
     "ctrl-alt-e": "rubber-ducky:encourage",
-    "ctrl-alt-r": "rubber-ducky:respond",
-    "ctrl-alt-d": "rubber-ducky:draw",
+    "ctrl-alt-r": "rubber-ducky:respond"
   }
 }
