@@ -2,13 +2,17 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Fetch an encouragement",
+        "label": "Encouragement from Rubber Ducky",
         "command": "rubber-ducky:encourage"
       },
       {
         "label": "Hear from Rubber Ducky",
         "command": "rubber-ducky:respond"
-      }
+      },
+      {
+        "label": "Draw Rubber Ducky",
+        "command": "rubber-ducky:draw"
+      },
     ]
   },
   "menu": [
@@ -19,12 +23,16 @@
           "label": "Rubber Ducky",
           "submenu": [
             {
-              "label": "Fetch an encouragement",
+              "label": "Encouragement from Rubber Ducky",
               "command": "rubber-ducky:encourage"
             },
             {
-              "label": "Respond",
+              "label": "Hear from Rubber Ducky",
               "command": "rubber-ducky:respond"
+            },
+            {
+              "label": "Draw Rubber Ducky",
+              "command": "rubber-ducky:draw"
             }
           ]
         }
