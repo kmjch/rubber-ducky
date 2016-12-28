@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle encourager",
+        "command": "encourager:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "encourager",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "encourager:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
