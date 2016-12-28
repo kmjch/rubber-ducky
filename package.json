@@ -1,20 +1,16 @@
 {
-  "name": "sourcefetch",
-  "main": "./lib/sourcefetch",
-  "version": "0.0.0",
+  "name": "encourager",
+  "main": "./lib/encourager",
+  "version": "0.1.0",
   "description": "A short description of your package",
   "keywords": [],
   "activationCommands": {
-    "atom-workspace": "sourcefetch:fetch"
+    "atom-workspace": "encourager:fetch"
   },
-  "repository": "https://github.com/atom/sourcefetch",
+  "repository": "https://github.com/kmjch/Encourager",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-    "cheerio": "^0.20.0",
-    "google": "^2.0.0",
-    "request": "^2.73.0"
-  }
+  "dependencies": {}
 }

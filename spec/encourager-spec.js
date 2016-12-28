@@ -1,44 +1,44 @@
 'use babel';
 
-import Sourcefetch from '../lib/sourcefetch';
+import Encourager from '../lib/encourager';
 
 // Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
 //
 // To run a specific `it` or `describe` block add an `f` to the front (e.g. `fit`
 // or `fdescribe`). Remove the `f` to unfocus the block.
 
-describe('Sourcefetch', () => {
+describe('Encourager', () => {
   let workspaceElement, activationPromise;
 
   beforeEach(() => {
     workspaceElement = atom.views.getView(atom.workspace);
-    activationPromise = atom.packages.activatePackage('sourcefetch');
+    activationPromise = atom.packages.activatePackage('encourager');
   });
 
-  describe('when the sourcefetch:toggle event is triggered', () => {
+  describe('when the encourager:fetch event is triggered', () => {
     it('hides and shows the modal panel', () => {
       // Before the activation event the view is not on the DOM, and no panel
       // has been created
-      expect(workspaceElement.querySelector('.sourcefetch')).not.toExist();
+      expect(workspaceElement.querySelector('.encourager')).not.toExist();
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'sourcefetch:toggle');
+      atom.commands.dispatch(workspaceElement, 'encourager:fetch');
 
       waitsForPromise(() => {
         return activationPromise;
       });
 
       runs(() => {
-        expect(workspaceElement.querySelector('.sourcefetch')).toExist();
+        expect(workspaceElement.querySelector('.encourager')).toExist();
 
-        let sourcefetchElement = workspaceElement.querySelector('.sourcefetch');
-        expect(sourcefetchElement).toExist();
+        let encouragerElement = workspaceElement.querySelector('.encourager');
+        expect(encouragerElement).toExist();
 
-        let sourcefetchPanel = atom.workspace.panelForItem(sourcefetchElement);
-        expect(sourcefetchPanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'sourcefetch:toggle');
-        expect(sourcefetchPanel.isVisible()).toBe(false);
+        let encouragerPanel = atom.workspace.panelForItem(encouragerElement);
+        expect(encouragerPanel.isVisible()).toBe(true);
+        atom.commands.dispatch(workspaceElement, 'encourager:fetch');
+        expect(encouragerPanel.isVisible()).toBe(false);
       });
     });
 
@@ -51,11 +51,11 @@ describe('Sourcefetch', () => {
       // workspaceElement to the DOM are generally slower than those off DOM.
       jasmine.attachToDOM(workspaceElement);
 
-      expect(workspaceElement.querySelector('.sourcefetch')).not.toExist();
+      expect(workspaceElement.querySelector('.encourager')).not.toExist();
 
       // This is an activation event, triggering it causes the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'sourcefetch:toggle');
+      atom.commands.dispatch(workspaceElement, 'encourager:fetch');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -63,10 +63,10 @@ describe('Sourcefetch', () => {
 
       runs(() => {
         // Now we can test for view visibility
-        let sourcefetchElement = workspaceElement.querySelector('.sourcefetch');
-        expect(sourcefetchElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'sourcefetch:toggle');
-        expect(sourcefetchElement).not.toBeVisible();
+        let encouragerElement = workspaceElement.querySelector('.encourager');
+        expect(encouragerElement).toBeVisible();
+        atom.commands.dispatch(workspaceElement, 'encourager:fetch');
+        expect(encouragerElement).not.toBeVisible();
       });
     });
   });

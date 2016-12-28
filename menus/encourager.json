@@ -2,8 +2,8 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Fetch code",
-        "command": "sourcefetch:fetch"
+        "label": "Fetch an encouragement",
+        "command": "encourager:fetch"
       }
     ]
   },
@@ -12,11 +12,11 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "sourcefetch",
+          "label": "encourager",
           "submenu": [
             {
-              "label": "Fetch code",
-              "command": "sourcefetch:fetch"
+              "label": "Fetch",
+              "command": "encourager:fetch"
             }
           ]
         }
