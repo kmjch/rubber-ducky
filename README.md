@@ -4,4 +4,4 @@ Forked from [NickTikhonov/sourcefetch-tutorial](https://github.com/NickTikhonov/
 
 Rubber Ducky gives you random answers.
 
-![A screenshot of package](http://g.recordit.co/7y0xxWy0lF.gif)
+![A screenshot of package](./static/readme.gif)
