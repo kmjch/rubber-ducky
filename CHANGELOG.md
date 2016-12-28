@@ -1,7 +1,7 @@
-## 0.1.1 - Second Release
-* Changed name from Encourager to Rubber Ducky
-* Added responses feature, which is the core function of rubber ducky
+## 1.0.0 - Second Release
+* Changed name from Encourager to Rubber Ducky.  A lot of git confusion.
+* Added responses feature, which is now the core function of rubber ducky.
 
 ## 0.1.0 - First Release
-* Every feature added
-* Every bug fixed
+* This was for Encourager, the former version of this package.
+* Randomly generated encouragements from a list of pre-written encouragements.
