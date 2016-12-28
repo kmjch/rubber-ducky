@@ -1,7 +1,7 @@
 {
   "name": "rubber-ducky",
   "main": "./lib/rubber-ducky",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "A text version of an encouraging and affirming rubber ducky.",
   "keywords": [],
   "activationCommands": {
