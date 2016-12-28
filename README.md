@@ -2,7 +2,7 @@
 
 Forked from [NickTikhonov/sourcefetch-tutorial](https://github.com/NickTikhonov/sourcefetch-tutorial).
 
-Rubber Ducky gives you the support you might need.
+Rubber Ducky gives you the support you want.
 
 ![A screenshot of package](./static/readme.gif)
 
