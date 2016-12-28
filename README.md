@@ -1,4 +1,4 @@
-# rubber-ducky package
+# rubber-ducky package (currently being debugged!)
 
 Forked from [NickTikhonov/sourcefetch-tutorial](https://github.com/NickTikhonov/sourcefetch-tutorial).
 
