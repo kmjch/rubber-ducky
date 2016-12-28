@@ -1,5 +1,6 @@
 {
   "atom-workspace": {
-    "ctrl-alt-e": "encourager:fetch"
+    "ctrl-alt-e": "rubberducky:encourage",
+    "ctrl-alt-v": "rubberducky:respond"
   }
 }

@@ -1,13 +1,14 @@
 {
-  "name": "encourager",
-  "main": "./lib/encourager",
+  "name": "rubberducky",
+  "main": "./lib/rubberducky",
   "version": "0.1.0",
-  "description": "A short description of your package",
+  "description": "A text version of an encouraging and affirming rubber ducky.",
   "keywords": [],
   "activationCommands": {
-    "atom-workspace": "encourager:fetch"
+    "atom-workspace": "rubberducky:encourage",
+    "atom-workspace": "rubberducky:respond",
   },
-  "repository": "https://github.com/kmjch/Encourager",
+  "repository": "https://github.com/kmjch/RubberDucky",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

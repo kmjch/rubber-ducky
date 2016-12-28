@@ -1,8 +1,8 @@
 'use babel';
 
-import EncouragerView from '../lib/encourager-view';
+import RubberDuckyView from '../lib/rubberducky-view';
 
-describe('EncouragerView', () => {
+describe('RubberDuckyView', () => {
   it('has one valid test', () => {
     expect('coding').toBe('fun');
   });
