@@ -1,5 +1,5 @@
 ## 1.1.0 - Third Release
-* Just to change rubberducky to rubber-ducky to go along with the name convention.
+* Changed rubberducky to rubber-ducky to go along with the name convention.
 
 ## 1.0.0 - Second Release
 * Changed name from Encourager to Rubber Ducky.  A lot of git confusion.
