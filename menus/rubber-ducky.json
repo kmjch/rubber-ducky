@@ -2,11 +2,11 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Fetch an encouragement",
+        "label": "Encourage",
         "command": "rubber-ducky:encourage"
       },
       {
-        "label": "Hear from Rubber Ducky",
+        "label": "Respond",
         "command": "rubber-ducky:respond"
       }
     ]
@@ -19,7 +19,7 @@
           "label": "Rubber Ducky",
           "submenu": [
             {
-              "label": "Fetch an encouragement",
+              "label": "Encourage",
               "command": "rubber-ducky:encourage"
             },
             {
