@@ -8,7 +8,11 @@
       {
         "label": "Hear from Rubber Ducky",
         "command": "rubber-ducky:respond"
-      }
+      },
+      {
+        "label": "Draw Rubber Ducky",
+        "command": "rubber-ducky:draw"
+      },
     ]
   },
   "menu": [
@@ -25,6 +29,10 @@
             {
               "label": "Respond",
               "command": "rubber-ducky:respond"
+            },
+            {
+              "label": "Draw",
+              "command": "rubber-ducky:draw"
             }
           ]
         }
