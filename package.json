@@ -4,10 +4,11 @@
   "version": "1.3.5",
   "description": "A text version of an encouraging and affirming rubber ducky.",
   "keywords": [],
-  "activationHooks": [
-    "atom-workspace:rubber-ducky:encourage",
-    "atom-workspace:rubber-ducky:respond"
-  ],
+  "activationCommands": [{
+        "atom-workspace": "rubber-ducky3:encourage"
+    }, {
+        "atom-workspace": "rubber-ducky3:respond"
+    }],
   "repository": "https://github.com/kmjch/rubber-ducky",
   "license": "MIT",
   "engines": {
